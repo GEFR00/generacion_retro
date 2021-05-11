@@ -1,17 +1,37 @@
 $centro: center;
-$borde_delgado: thin;
+%navegador_estilo {
+    border: 1px solid #EFCBC8;
+    margin-left: -15px;
+    margin-right: -15px;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
 
 #banner {
     height: 110px;
     background-color: black;
     text-align: center;
-    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -15px;
+    
 }
 
 #logo_banner {
     height: 100px;
     width: 140px;
     
+}
+#barra_navegador {
+    margin-top: -16px;
 }
 
 #ban_log {
@@ -21,24 +41,31 @@ $borde_delgado: thin;
 
 #seccion_loggeo {
     list-style-type: none;
+    margin-right: 15px;
+    margin-top: -100px;
 }
 
-#barra_navegador {
-    border: 1px solid #EFCBC8;
-    margin: 15px;
-    margin-left: -15px;
-    margin-right: -15px;
-}
+
 
 #lista_navegador {
     list-style-type: none;
-    text-align: $centro;
+    padding-inline-start: 0;
+    align-items: center;
+    -webkit-box-align: center;
+    
+}
 
+#nav_1, #nav_2, #nav_3 {
+    @extend %navegador_estilo;
+    
 }
 
 .contenido_nav {
-    display: table-cell;
     width: 1%;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4em;
+    text-align: $centro;
+    text-decoration: none;
+    display: table-cell;
+    padding: 15px;
+    
 }
