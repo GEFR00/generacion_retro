@@ -6,6 +6,7 @@ $centro: center;
     
 }
 
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -72,7 +73,37 @@ a {
 
 #radio_play_pause {
     border: 1px black solid;
-    
-    
+    margin: 20px;
+}
 
+#bloque_central {
+    display: flex;
+    text-align:center;
+    
+}
+
+#radio_video_enVivo {
+    border: 1px black solid;
+    margin: 20px;
+    height: 14cm;
+    width: 25cm;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.patrocinadores {
+    border: 1px black solid;
+    margin: 20px;
+    height: 15cm;
+    width: 10cm;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#patrocinador_1, #patrocinador_2 {
+    border: 1px black solid;
+    height: 7.5cm;
+    width: 10cm;
 }
